@@ -60,4 +60,5 @@ target_link_libraries(BALM1_test ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 add_executable(EF_test src/compare_test/EF_test.cpp src/compare_test/SE3/SO3.cpp src/compare_test/SE3/SE3.cpp)
 target_link_libraries(EF_test ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 
-
+add_executable(benchmark_realworld_TUM src/benchmark/benchmark_realworld_TUM.cpp)
+target_link_libraries(benchmark_realworld_TUM ${catkin_LIBRARIES} ${PCL_LIBRARIES})
